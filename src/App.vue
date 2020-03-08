@@ -94,4 +94,8 @@ a {
     line-height: 1.5;
     padding: 4em 20px 0;
 }
+
+.intro {
+    max-width: 100%;
+}
 </style>
