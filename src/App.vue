@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Bitter|Raleway|Lato&display=swap');
 
 :root {
-    font-size: 18px;
+    font-size: 16px;
     --color-primary: darkslategray;
     --color-secondary: cornsilk;
 
@@ -92,7 +92,7 @@ a {
     display: flex;
     justify-content: center;
     line-height: 1.5;
-    padding: 4em 20px 0;
+    padding: 4em 1em 0;
 }
 
 .intro {
