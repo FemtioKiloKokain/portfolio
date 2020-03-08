@@ -2,12 +2,12 @@
     <div id="app">
         <div class="intro">
             <h1>Jens Augustsson</h1>
+            <h2>Frontend-utvecklare</h2>
             <p>
-                Tycker om att bygga användarorienterade gränsnitt för webben.
-            </p>
-            <p>
-                Man hittar mig hos
-                <a href="gloo.moe">Forsman & Bodenfors Inhouse</a>
+                Bygger gränsnitt för webben.
+                <br>
+                Hittas hos
+                <a href="https://www.fbinhouse.se">Forsman & Bodenfors Inhouse</a>
             </p>
         </div>
     </div>
@@ -39,6 +39,8 @@ h5,
 h6 {
     font-family: 'Zilla Slab', serif;
     letter-spacing: 0.05em;
+    font-weight: 400;
+    line-height: 1.05;
 }
 
 h1 {
@@ -47,9 +49,14 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    margin-top: 0;
+    font-size: 1.42em;
+}
+
 p {
-    width: 100%;
-    max-width: 60ch;
+    max-width: 100%;
+    width: 60ch;
 }
 
 @mixin stroke($color: currentColor, $size: 0.05em) {
