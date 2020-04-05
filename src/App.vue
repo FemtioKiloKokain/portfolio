@@ -5,14 +5,27 @@
             <h2>Frontend-utvecklare</h2>
             <p>
                 Bygger gränsnitt för webben.
-                <br>
+                <br />
                 Hittas hos
-                <a href="https://www.fbinhouse.se">Forsman & Bodenfors Inhouse</a>
+                <a href="https://www.fbinhouse.se"
+                    >Forsman & Bodenfors Inhouse</a
+                >
             </p>
+        </div>
+        <div class="paintings">
+            <painting name="Chemex" />
         </div>
     </div>
 </template>
 
+<script>
+import OneDivPainting from '@/components/OneDivPainting';
+export default {
+    components: {
+        painting: OneDivPainting
+    }
+};
+</script>
 <style lang="scss">
 @import url('~@/assets/dm.css');
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab|Bitter|Raleway|Lato&display=swap');
@@ -23,12 +36,16 @@
     --color-secondary: cornsilk;
 
     @media screen and (min-width: 768px) {
-        font-size: 22px;
+        font-size: 26px;
     }
 }
 
 body {
     background-color: var(--color-secondary);
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
 }
 
 h1,
@@ -72,15 +89,16 @@ a {
     flex-flow: column;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.15s ease-out;
+    transition: 0.15s;
     box-shadow: inset 0 1.3em var(--color-secondary),
         inset 0 calc(1.4em) currentColor;
     @include stroke(var(--color-secondary), 0.1em);
 
     &:hover {
+        transition: 0.15s ease-out;
         box-shadow: inset 0 1.3em var(--color-secondary),
             inset 0 calc(1.2em) currentColor;
-        transform: translateY(-.1em);
+        transform: translateY(-0.1em);
     }
 }
 
@@ -90,12 +108,20 @@ a {
     -moz-osx-font-smoothing: grayscale;
     color: var(--color-primary);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     line-height: 1.5;
     padding: 4em 1em 0;
 }
 
 .intro {
     max-width: 100%;
+}
+
+.paintings {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 </style>
