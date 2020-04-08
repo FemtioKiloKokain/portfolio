@@ -2,9 +2,9 @@
     <div id="app">
         <div class="intro">
             <h1>Jens Augustsson</h1>
-            <h2>Frontend-utvecklareasd</h2>
+            <h2>Frontend-utvecklare</h2>
             <p>
-                Bygger gränsnitt för webben.asdasdasdasd
+                Bygger gränsnitt för webben.
                 <br />
                 Hittas hos
                 <a href="https://www.fbinhouse.se"
